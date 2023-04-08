@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Real Time Chat",
+        "cover": "./assets/Screenshot_25.png",
+        "images": [],
+        "description": "Real Time Chat Description",
+        "backTechnologies": ["C#", ".NET", "JWT", "SignalR"],
+        "frontTechnologies": ["Angular", "Angular Material", "SignalR"],
+        "dbTechnologies": ["PostgreSQL", "EntityFramework", "Code First"],
+        "repository": "https://github.com/Cristianbenz/chatClient",
+        "deploy": "https://cbenzchat.vercel.app/"
+    }
+]

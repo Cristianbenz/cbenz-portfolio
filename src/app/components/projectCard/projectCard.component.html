@@ -1,0 +1,9 @@
+<div class="container" (mouseover)="hover(true)" (mouseleave)="hover(false)">
+    <div class="picture-container">
+        <span *ngIf="isHovered" class="picture-effect" (click)="openDialog()">
+            <mat-icon aria-hidden="true" fontIcon="info"/>
+        </span>
+        <img src="{{project.cover}}" width="380" height="190" />
+    </div>
+    <h3 class="title">{{project.title}}</h3>
+</div>

@@ -1,0 +1,15 @@
+.softSkills-section {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.softSkills-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    flex-wrap: wrap;
+    gap: 14px;
+}

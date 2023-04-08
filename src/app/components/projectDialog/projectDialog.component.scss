@@ -1,0 +1,48 @@
+@import '../../../styles/palette';
+
+.container {
+    width: 80vw;
+    height: 70vh;
+    background-color: map-get($surfaces, 500);
+}
+
+.title {
+    color: map-get($surfaces, "contrast", 500);
+    // text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.content .topSection {
+    display: flex;
+    gap: 10px;
+    color: map-get($surfaces, "contrast", 500);
+}
+
+.technologiesList {
+    display: flex;
+    list-style-type: none;
+    gap: 4px;
+    color: map-get($surfaces, "contrast", 500);
+
+    span {
+        font-weight: bolder;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.closeButton {
+    background-color: map-get($secondary, contrast, 500);
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/palette';
+
+.navBar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: map-get($primary, 500);
+}
+
+.brand {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 22px;
+    align-items: center;
+}

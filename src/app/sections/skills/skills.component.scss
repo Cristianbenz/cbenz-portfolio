@@ -1,0 +1,13 @@
+@import '../../../styles/palette';
+
+section {
+    padding-left: 20px;
+}
+.skillsList {
+    width: 90%;
+    min-height: 200px;
+    display: flex;
+    list-style-type: none;
+    background-color: map-get($surfaces, 500);
+    border-radius: 10px;
+}

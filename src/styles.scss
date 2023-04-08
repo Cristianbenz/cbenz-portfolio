@@ -3,7 +3,7 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
-
+@import 'styles/_palette.scss';
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -12,22 +12,16 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$cbenz-portfolio-primary: mat.define-palette(#002B5B);
-$cbenz-portfolio-secondary: mat.define-palette(#159895);
-$cbenz-portfolio-on-primary: mat.define-palette(#dee9e9);
-$cbenz-portfolio-on-secondary: mat.define-palette(#161718);
-$cbenz-portfolio-surfaces: mat.define-palette(#09407e);
-$cbenz-portfolio-warn: mat.define-palette(#96071c);
+$cbenz-portfolio-primary: mat.define-palette($primary);
+$cbenz-portfolio-accent: mat.define-palette($secondary);
+$cbenz-portfolio-warn: mat.define-palette($warn);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$cbenz-portfolio-theme: mat.define-light-theme((
+$cbenz-portfolio-theme: mat.define-dark-theme((
   color: (
     primary: $cbenz-portfolio-primary,
-    secondary: $cbenz-portfolio-secondary,
-    on-primary: $cbenz-portfolio-on-primary,
-    on-secondary: $cbenz-portfolio-on-secondary,
-    surfaces: $cbenz-portfolio-surfaces,
+    accent: $cbenz-portfolio-accent,
     warn: $cbenz-portfolio-warn,
   )
 ));
@@ -39,5 +33,37 @@ $cbenz-portfolio-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$full-width: 1200px;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: auto;
+}
+
+html, body {
+  width: $full-width;
+  min-height: 100vh;
+  background-color: map-get($primary, 700);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: map-get($secondary, 500)
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.app-section {
+  min-height: 100vh;
+}
