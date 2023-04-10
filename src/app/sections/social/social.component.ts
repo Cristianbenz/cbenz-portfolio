@@ -15,7 +15,7 @@ export class SocialComponent {
     {
       icon: 'code',
       name: 'Github',
-      link: 'https://github.com/Cristianbenz/tab=repositories',
+      link: 'https://github.com/Cristianbenz?tab=repositories',
     },
     {
       icon: 'account_box',

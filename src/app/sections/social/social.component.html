@@ -2,7 +2,7 @@
     <h2>Contact and Social</h2>
     <ul class="networkList">
         <li *ngFor="let network of networks" class="network-card">
-            <a href="{{network.link}}" class="network-link">
+            <a href="{{network.link}}" class="network-link" target="_blank">
                 <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" class="link-icon" />
                 <h3>{{network.name}}</h3>
             </a>
