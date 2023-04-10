@@ -1,9 +1,9 @@
-<section class="app-section">
+<section id="social" class="{{!current.includes('social') && 'app-section'}} {{current.includes('social') && 'show-section'}}">
     <h2>Contact and Social</h2>
     <ul class="networkList">
         <li *ngFor="let network of networks" class="network-card">
             <a href="{{network.link}}" class="network-link">
-                <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" />
+                <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" class="link-icon" />
                 <h3>{{network.name}}</h3>
             </a>
         </li>

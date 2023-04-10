@@ -8,11 +8,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon'
 
 import { HeaderComponent } from './components/header/header.component';
+import { AppSectionComponent } from './components/appSection/appSection.component';
 import { HomeComponent } from './sections/home/home.component';
 import { AboutComponent } from './sections/about/about.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { SocialComponent } from './sections/social/social.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 import { ProjectCardComponent } from './components/projectCard/projectCard.component';
 import { ProjectDialogComponent } from './components/projectDialog/projectDialog.component';
@@ -21,13 +23,15 @@ import { ProjectDialogComponent } from './components/projectDialog/projectDialog
   declarations: [
     AppComponent,
     HeaderComponent,
+    AppSectionComponent,
     HomeComponent,
     AboutComponent,
     SkillsComponent,
     SocialComponent,
     ProjectCardComponent,
     ProjectDialogComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

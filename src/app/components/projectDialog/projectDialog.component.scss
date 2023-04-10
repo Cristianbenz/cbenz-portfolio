@@ -2,27 +2,32 @@
 
 .container {
     width: 80vw;
-    height: 70vh;
+    min-height: 80vh;
     background-color: map-get($surfaces, 500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 .title {
     color: map-get($surfaces, "contrast", 500);
-    // text-align: center;
     font-size: 28px;
     font-weight: bolder;
     padding-bottom: 20px;
 }
 
-.content {
-    display: flex;
+.topSection {
+    display: flex; 
     flex-direction: column;
-    gap: 13px;
+    gap: 10px;
 }
 
-.content .topSection {
+.information {
     display: flex;
+    align-items: center;
     gap: 10px;
+    font-size: 18px;
     color: map-get($surfaces, "contrast", 500);
 }
 

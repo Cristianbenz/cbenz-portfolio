@@ -1,15 +1,33 @@
-<section class="app-setion">
+<section id="skills" class="{{!current.includes('skills') && 'app-section'}} {{current.includes('skills') && 'show-section'}}">
     <h2>Skills</h2>
     <section>
-        <h2>Front End</h2>
-        <ul class="skillsList"></ul>
+        <h2>Programming Languages</h2>
+        <ul class="skillsList">
+            <skill *ngFor="let skill of programmingLanguages" [skill]="skill" />
+        </ul>
     </section>
     <section>
-        <h2>Back End</h2>
-        <ul class="skillsList"></ul>
+        <h2>Frameworks</h2>
+        <ul class="skillsList">
+            <skill *ngFor="let skill of frameworksTechs" [skill]="skill" />
+        </ul>
     </section>
     <section>
         <h2>Database</h2>
-        <ul class="skillsList"></ul>
+        <ul class="skillsList">
+            <skill *ngFor="let skill of databaseTechs" [skill]="skill" />
+        </ul>
+    </section>
+    <section>
+        <h2>Tools</h2>
+        <ul class="skillsList">
+            <skill *ngFor="let skill of tools" [skill]="skill" />
+        </ul>
+    </section>
+    <section>
+        <h2>Others</h2>
+        <ul class="skillsList">
+            <skill *ngFor="let skill of others" [skill]="skill" />
+        </ul>
     </section>
 </section>

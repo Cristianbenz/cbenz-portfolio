@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+span {
+  font-size: 30px;
+}

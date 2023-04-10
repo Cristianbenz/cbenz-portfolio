@@ -1,0 +1,59 @@
+{
+  "programmingLanguages": [
+    {
+      "icon": "./assets/images/skills/csharp-logo.png",
+      "name": "C#"
+    },
+    {
+      "icon": "./assets/images/skills/ts-logo.png",
+      "name": "TypeScript"
+    }
+  ],
+  "frameworks": [
+    {
+      "icon": "./assets/images/skills/net-logo.png",
+      "name": ".NET"
+    },
+    {
+      "icon": "./assets/images/skills/angular-logo.png",
+      "name": "Angular Js"
+    }
+  ],
+  "database": [
+    {
+      "icon": "./assets/images/skills/psql-logo.png",
+      "name": "PostgreSQL"
+    },
+    {
+      "icon": "./assets/images/skills/sqlserver-logo.png",
+      "name": "SQL server"
+    },
+    {
+      "icon": "./assets/images/skills/mongodb-logo.png",
+      "name": "MongoDB"
+    },
+    {
+      "icon": "./assets/images/skills/EF-logo.png",
+      "name": "Entity Framework"
+    }
+  ],
+  "tools": [
+    {
+      "icon": "./assets/images/skills/git-logo.png",
+      "name": "Git"
+    },
+    {
+      "icon": "./assets/images/skills/git-logo.png",
+      "name": "Github"
+    },
+    {
+      "icon": "./assets/images/skills/slack-logo.png",
+      "name": "Slack"
+    }
+  ],
+  "others": [
+    {
+      "name": "Scrum"
+    }
+  ]
+}

@@ -43,11 +43,27 @@ html {
   margin: auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: map-get($secondary, 500);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: map-get($secondary, 700);
+}
+
 html, body {
   width: $full-width;
   min-height: 100vh;
   background-color: map-get($primary, 700);
-  overflow-x: hidden;
 }
 
 body {
@@ -60,10 +76,20 @@ ul {
   padding-inline-start: 0;
 }
 
-main {
-  padding-top: 80px;
+.app-section {
+  display: none;
 }
 
-.app-section {
+.show-section {
+  padding-top: 80px;
   min-height: 100vh;
+}
+
+h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: map-get($secondary, 500);
+  margin: 7px 10px;
 }

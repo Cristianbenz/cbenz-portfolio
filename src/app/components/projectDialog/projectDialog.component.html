@@ -1,31 +1,31 @@
 <div class="container">
-    <span mat-dialog-title class="title">{{project.title}}</span>
-    <div mat-dialog-content class="content">
-        <section class="topSection">
-            <img src="{{project.cover}}" width="400px" height="200px" />
-            <p>{{project.description}}</p>
+    <section class="topSection">
+            <span mat-dialog-title class="title">{{project.title}}</span>
+            <div class="information">
+                <img src="{{project.cover}}" width="400px" height="200px" />
+                <div>
+                    <p>{{project.description}}</p>
+                    <ul class="technologiesList">
+                        <span>BackEnd Technologies: </span>
+                        <li *ngFor="let technology of project.backTechnologies">
+                            {{technology}}
+                        </li>
+                    </ul>
+                    <ul class="technologiesList">
+                        <span>FrontEnd Technologies: </span>
+                        <li *ngFor="let technology of project.frontTechnologies">
+                            {{technology}}
+                        </li>
+                    </ul>
+                    <ul class="technologiesList">
+                        <span>Database Technologies: </span>
+                        <li *ngFor="let technology of project.dbTechnologies">
+                            {{technology}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <ul class="technologiesList">
-                <span>BackEnd Technologies: </span>
-                <li *ngFor="let technology of project.backTechnologies">
-                    {{technology}}
-                </li>
-            </ul>
-            <ul class="technologiesList">
-                <span>FrontEnd Technologies: </span>
-                <li *ngFor="let technology of project.frontTechnologies">
-                    {{technology}}
-                </li>
-            </ul>
-            <ul class="technologiesList">
-                <span>Database Technologies: </span>
-                <li *ngFor="let technology of project.dbTechnologies">
-                    {{technology}}
-                </li>
-            </ul>
-        </section>
-    </div>
     <section mat-dialog-actions class="actions">
         <a href="{{project.repository}}" target="_blank">
             <button mat-raised-button color="accent" >Repository</button>

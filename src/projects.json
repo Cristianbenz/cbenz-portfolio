@@ -3,10 +3,10 @@
         "title": "Real Time Chat",
         "cover": "./assets/Screenshot_25.png",
         "images": [],
-        "description": "Real Time Chat Description",
-        "backTechnologies": ["C#", ".NET", "JWT", "SignalR"],
-        "frontTechnologies": ["Angular", "Angular Material", "SignalR"],
-        "dbTechnologies": ["PostgreSQL", "EntityFramework", "Code First"],
+        "description": "Chat application, once an account is created, the user can search for other existing users by name and identifier, and exchange messages with them. The relevance of the project is the use of SignalR to create real-time functionalities such as receiving messages and requests.",
+        "backTechnologies": ["C#,", ".NET,", "JWT,", "SignalR"],
+        "frontTechnologies": ["Angular,", "Angular Material,", "SignalR"],
+        "dbTechnologies": ["PostgreSQL,", "EntityFramework,", "Code First"],
         "repository": "https://github.com/Cristianbenz/chatClient",
         "deploy": "https://cbenzchat.vercel.app/"
     }

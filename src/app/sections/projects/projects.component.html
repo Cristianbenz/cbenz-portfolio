@@ -1,4 +1,4 @@
-<section class="app-section">
+<section id="projects" class="{{!current.includes('projects') && 'app-section'}} {{current.includes('projects') && 'show-section'}}">
     <h2>Projects</h2>
     <ul class="projectsList">
         <li *ngFor="let project of projects">

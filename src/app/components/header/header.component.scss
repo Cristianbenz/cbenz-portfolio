@@ -3,6 +3,7 @@
 .navBar {
     width: 100vw;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     display: flex;
@@ -25,4 +26,25 @@
     font-weight: bolder;
     font-size: 22px;
     align-items: center;
+}
+
+.navLink {
+    color: map-get($secondary, 500);
+    text-decoration: none;
+    position: relative;
+
+}
+
+.active, .navLink:hover {
+    color: map-get($primary, contrast, 500);
+    position: relative;
+}
+
+.active::after, .navLink:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: map-get($primary, contrast, 500);
 }
