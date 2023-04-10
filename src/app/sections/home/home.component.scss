@@ -1,3 +1,4 @@
+@import "../../../styles/palette";
 .home {
   display: flex;
   flex-direction: column;
@@ -11,4 +12,19 @@ h1 {
 
 span {
   font-size: 30px;
+}
+
+.cv-link {
+  color: map-get($primary, contrast, 500);
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid map-get($primary, contrast, 500);
+  width: max-content;
+  padding: 6px 8px;
+  transition: all 500ms;
+}
+
+.cv-link:hover {
+  color: map-get($secondary, contrast, 500);
+  background-color: map-get($primary, contrast, 500);
 }
