@@ -2,22 +2,24 @@
     <section class="topSection">
             <span mat-dialog-title class="title">{{project.title}}</span>
             <div class="information">
-                <img src="{{project.cover}}" width="400px" height="200px" />
+                <video autoplay controls [muted]="'muted'" class="video">
+                    <source src="{{project.images[0]}}" type="video/mp4" />
+                </video>
                 <div>
                     <p>{{project.description}}</p>
-                    <ul class="technologiesList">
+                    <ul *ngIf="project.backTechnologies" class="technologiesList">
                         <span>BackEnd Technologies: </span>
                         <li *ngFor="let technology of project.backTechnologies">
                             {{technology}}
                         </li>
                     </ul>
-                    <ul class="technologiesList">
+                    <ul *ngIf="project.frontTechnologies" class="technologiesList">
                         <span>FrontEnd Technologies: </span>
                         <li *ngFor="let technology of project.frontTechnologies">
                             {{technology}}
                         </li>
                     </ul>
-                    <ul class="technologiesList">
+                    <ul *ngIf="project.dbTechnologies" class="technologiesList">
                         <span>Database Technologies: </span>
                         <li *ngFor="let technology of project.dbTechnologies">
                             {{technology}}
@@ -31,7 +33,7 @@
             <button mat-raised-button color="accent" >Repository</button>
         </a>
         <a href="{{project.deploy}}" target="_blank">
-            <button mat-raised-button color="accent" >Deploy</button>
+            <button mat-raised-button color="accent" >Site</button>
         </a>
         <button mat-raised-button class="closeButton" (click)="closeDialog()">Close</button>
     </section>
