@@ -4,6 +4,9 @@
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
 @import 'styles/_palette.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -61,15 +64,16 @@ html {
 }
 
 html, body {
-  width: $full-width;
-  min-height: 100vh;
   background-color: map-get($primary, 700);
 }
 
 body {
-  margin: 0;
+  margin: auto;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  color: map-get($secondary, 500)
+  color: map-get($secondary, 500);
+  max-width: $full-width;
+  min-height: 100vh;
+  padding: 30px 20px 4px 20px;
 }
 
 ul {
@@ -83,6 +87,13 @@ ul {
 .show-section {
   padding-top: 80px;
   min-height: 100vh;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px 0;
 }
 
 h2::after {

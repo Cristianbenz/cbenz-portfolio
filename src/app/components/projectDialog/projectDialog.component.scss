@@ -25,10 +25,14 @@
 
 .information {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     font-size: 18px;
     color: map-get($surfaces, "contrast", 500);
+
+    p {
+        margin: 0;
+    }
 }
 
 .technologiesList {
@@ -50,4 +54,9 @@
 
 .closeButton {
     background-color: map-get($secondary, contrast, 500);
+}
+
+.video {
+    width: 500px;
+    height: auto;
 }
