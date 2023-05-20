@@ -34,8 +34,6 @@ $cbenz-portfolio-theme: mat.define-dark-theme((
 // that you are using.
 @include mat.all-component-themes($cbenz-portfolio-theme);
 
-/* You can add global styles to this file, and also import other style files */
-
 $full-width: 1200px;
 
 * {
@@ -104,3 +102,5 @@ h2::after {
   background: map-get($secondary, 500);
   margin: 7px 10px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

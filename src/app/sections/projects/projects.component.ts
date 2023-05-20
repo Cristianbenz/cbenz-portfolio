@@ -3,9 +3,13 @@ import { Component, inject } from "@angular/core";
 import data from '../../../projects.json';
 import { Project } from "src/app/models/project";
 import { RouterService } from "src/app/services/router";
+import { CommonModule } from "@angular/common";
+import { ProjectCardComponent } from "src/app/components/projectCard/projectCard.component";
 
 @Component({
+    standalone: true,
     selector: 'app-projects',
+    imports: [CommonModule, ProjectCardComponent],
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.scss']
 })

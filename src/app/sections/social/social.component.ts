@@ -2,8 +2,14 @@ import { Component, inject } from '@angular/core';
 import { Network } from 'src/app/models/network';
 import { RouterService } from 'src/app/services/router';
 
+import { MatIconModule } from '@angular/material/icon'
+import { CommonModule } from '@angular/common';
+import { SkillComponent } from 'src/app/components/skill/skill.component';
+
 @Component({
+  standalone: true,
   selector: 'app-social',
+  imports: [CommonModule, MatIconModule, SkillComponent],
   templateUrl: './social.component.html',
   styleUrls: ['./social.component.scss'],
 })
