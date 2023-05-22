@@ -2,9 +2,9 @@
     <h2>Contact and Social</h2>
     <ul class="networkList">
         <li *ngFor="let network of networks" class="network-card">
-            <a href="{{network.link}}" class="network-link" target="_blank">
+            <a href="{{network.link}}" class="network-link mx-auto" target="_blank">
                 <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" class="link-icon" />
-                <h3>{{network.name}}</h3>
+                <h3 class="w-full inline pl-4 break-all">{{network.name}}</h3>
             </a>
         </li>
     </ul>

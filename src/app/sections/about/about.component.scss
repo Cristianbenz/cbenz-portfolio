@@ -8,19 +8,14 @@
 
 .avatar {
     position: relative;
-    width: 600px;
-    height: max-content;
+    height: auto;
     border-radius: 50%;
     background-color: map-get($surfaces, 500);
     overflow: hidden;
 }
 
 .softSkills-section {
-    width: 400px;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 80px;
+    max-width: 400px;
 }
 
 .softSkills-list {
