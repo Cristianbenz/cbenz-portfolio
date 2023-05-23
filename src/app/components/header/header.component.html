@@ -1,10 +1,26 @@
-<header class="navBar">
+<header class="navBar flex justify-between px-8 py-3 sm:px-0 sm:justify-around">
     <i class="brand">Cbenz</i>
-    <nav>
+    <nav class="hidden sm:block">
         <ul class="menu">
             <li *ngFor="let link of links" (click)="setSection(link.id)">
                 <a href="#{{link.id}}" class="navLink {{actual.includes(link.id) && 'active'}}">{{link.text}}</a>
             </li>
         </ul>
     </nav>
+    <section class="sm:hidden">
+      <button mat-icon-button (click)="snav.toggle()" >
+          <mat-icon color="accent" >menu</mat-icon>
+      </button>
+      <mat-sidenav-container>
+        <div class="{{!snav.opened? 'hidden' : 'block'}} bg-black fixed left-0 top-0 w-full h-full opacity-50" (click)="snav.close()">
+        </div>
+        <mat-sidenav class="sm:hidden left-0 w-screen" #snav mode="over" fixedInViewport=true fixedTopGap="78">
+          <mat-list class="h-full gap-6">
+            <mat-list-item *ngFor="let link of links" (click)="setSection(link.id)" >
+              <a (click)="snav.close()" href="#{{link.id}}" class="navLink {{actual.includes(link.id) && 'active'}}">{{link.text}}</a>
+            </mat-list-item>
+          </mat-list>
+        </mat-sidenav>
+      </mat-sidenav-container>
+    </section>
 </header>

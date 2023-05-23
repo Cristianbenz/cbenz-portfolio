@@ -3,9 +3,13 @@ import { RouterService } from "src/app/services/router";
 
 import skills from "../../../skills.json"
 import { Skill } from "src/app/models/skill";
+import { CommonModule } from "@angular/common";
+import { SkillComponent } from "src/app/components/skill/skill.component";
 
 @Component({
+    standalone: true,
     selector: 'app-skills',
+    imports: [CommonModule, SkillComponent],
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss']
 })

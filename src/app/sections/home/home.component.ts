@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterService } from 'src/app/services/router';
 @Component({
+    standalone: true,
     selector: 'app-home',
     templateUrl: 'home.component.html',
     styleUrls: ['./home.component.scss']

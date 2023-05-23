@@ -12,28 +12,14 @@
 }
 
 .network-card {
-    height: 80px;
+    height: max-content;
+    padding: 30px 40px;
     border-radius: 10px;
     background-color: map-get($surfaces, 500);
     width: 60%;
-    font-size: 24px;
+    color: map-get($surfaces, contrast, 500);
 }
 
 .network-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     text-decoration: none;
-    color: map-get($surfaces, contrast, 500);
-
-    h2 {
-        margin: 0;
-    }
-}
-
-.link-icon {
-    font-size: 27px;
 }

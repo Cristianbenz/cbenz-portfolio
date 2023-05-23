@@ -6,11 +6,9 @@
     z-index: 999;
     top: 0;
     left: 0;
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
     align-items: center;
     background-color: map-get($primary, 500);
+    margin: 0 auto;
 }
 
 .brand {

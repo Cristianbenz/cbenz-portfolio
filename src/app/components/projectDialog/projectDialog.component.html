@@ -1,40 +1,42 @@
-<div class="container">
+<div class="container overflow-y-scroll overflow-x-hidden">
     <section class="topSection">
             <span mat-dialog-title class="title">{{project.title}}</span>
-            <div class="information">
+            <div class="information flex-col md:flex-row gap-y-10 gap-x-2 flex-wrap">
                 <video autoplay controls [muted]="'muted'" class="video">
                     <source src="{{project.images[0]}}" type="video/mp4" />
                 </video>
-                <div>
-                    <p>{{project.description}}</p>
-                    <ul *ngIf="project.backTechnologies" class="technologiesList">
-                        <span>BackEnd Technologies: </span>
-                        <li *ngFor="let technology of project.backTechnologies">
-                            {{technology}}
-                        </li>
-                    </ul>
-                    <ul *ngIf="project.frontTechnologies" class="technologiesList">
-                        <span>FrontEnd Technologies: </span>
-                        <li *ngFor="let technology of project.frontTechnologies">
-                            {{technology}}
-                        </li>
-                    </ul>
-                    <ul *ngIf="project.dbTechnologies" class="technologiesList">
-                        <span>Database Technologies: </span>
-                        <li *ngFor="let technology of project.dbTechnologies">
-                            {{technology}}
-                        </li>
-                    </ul>
+                <div class="flex flex-col gap-6">
+                    <p class="p-0">{{project.description}}</p>
+                    <section class="flex flex-col gap-3">
+                        <ul *ngIf="project.backTechnologies" class="technologiesList">
+                            <span>BackEnd Technologies: </span>
+                            <li *ngFor="let technology of project.backTechnologies">
+                                {{technology}}
+                            </li>
+                        </ul>
+                        <ul *ngIf="project.frontTechnologies" class="technologiesList">
+                            <span>FrontEnd Technologies: </span>
+                            <li *ngFor="let technology of project.frontTechnologies">
+                                {{technology}}
+                            </li>
+                        </ul>
+                        <ul *ngIf="project.dbTechnologies" class="technologiesList">
+                            <span>Database Technologies: </span>
+                            <li *ngFor="let technology of project.dbTechnologies">
+                                {{technology}}
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </section>
-    <section mat-dialog-actions class="actions">
-        <a href="{{project.repository}}" target="_blank">
-            <button mat-raised-button color="accent" >Repository</button>
+    <section mat-dialog-actions class="flex flex-col sm:flex-row justify-center gap-2 p-y-2 mt-4">
+        <a href="{{project.repository}}" target="_blank" class="w-full">
+            <button mat-raised-button color="accent" class="w-full">Repository</button>
         </a>
-        <a href="{{project.deploy}}" target="_blank">
-            <button mat-raised-button color="accent" >Site</button>
+        <a href="{{project.deploy}}" target="_blank" class="w-full">
+            <button mat-raised-button color="accent" class="w-full">Site</button>
         </a>
-        <button mat-raised-button class="closeButton" (click)="closeDialog()">Close</button>
+        <button mat-raised-button class="closeButton w-full" (click)="closeDialog()">Close</button>
     </section>
 </div>
