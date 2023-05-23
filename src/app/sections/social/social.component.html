@@ -1,10 +1,10 @@
 <section id="social" class="{{!current.includes('social') && 'app-section'}} {{current.includes('social') && 'show-section'}}">
     <h2>Contact and Social</h2>
     <ul class="networkList">
-        <li *ngFor="let network of networks" class="network-card">
-            <a href="{{network.link}}" class="network-link mx-auto" target="_blank">
-                <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" class="link-icon" />
-                <h3 class="w-full inline pl-4 break-all">{{network.name}}</h3>
+        <li *ngFor="let network of networks" class="network-card" >
+            <a  href="{{network.link}}" class="flex flex-wrap items-center justify-center w-full h-full text-lg font-bold sm:text-2xl" target="_blank">
+                <mat-icon aria-hidden="true" fontIcon="{{network.icon}}" />
+                <h3 class="w-max inline pl-4 break-all">{{network.name}}</h3>
             </a>
         </li>
     </ul>
