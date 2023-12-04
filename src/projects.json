@@ -13,9 +13,9 @@
         "cover": "./assets/images/krBijou/krBijou-portrait.png",
         "images": ["./assets/images/krBijou/krBijou-video.mp4"],
         "description": "Web application where the owner can show all his products to customers. Also, it has contact information about the venture, and different ways to do it. Finally, it has an administration section that can be accessed with authentication, this section has tables of the products and categories on the website, where products and categories can be hidden to customers, can be modified, and the owner can add more through forms.",
-        "backTechnologies": ["C#,", ".NET,", "JWT"],
+        "backTechnologies": ["Java,", "Spring Boot,", "JWT"],
         "frontTechnologies": ["Angular,", "Angular Material", "Tailwind"],
-        "dbTechnologies": ["PostgreSQL,", "EntityFramework,", "Code First"],
+        "dbTechnologies": ["Mongo Db,"],
         "repository": "https://github.com/Cristianbenz/krBijouterieClient",
         "deploy": "https://krbijouterie.vercel.app/"
     },
@@ -24,9 +24,9 @@
         "cover": "./assets/images/chat/chat-portrait.png",
         "images": ["./assets/images/chat/chat-video.mp4"],
         "description": "Chat application, once an account is created, the user can search for other existing users by name and identifier, and exchange messages with them. The relevance of the project is the use of SignalR to create real-time functionalities such as receiving messages and requests.",
-        "backTechnologies": ["C#,", ".NET,", "JWT,", "SignalR"],
+        "backTechnologies": ["Java,", "Spring boot,", "JWT,", "WebSockets"],
         "frontTechnologies": ["Angular,", "Angular Material,", "SignalR"],
-        "dbTechnologies": ["PostgreSQL,", "EntityFramework,", "Code First"],
+        "dbTechnologies": ["PostgreSQL,", "JPA,"],
         "repository": "https://github.com/Cristianbenz/chatClient",
         "deploy": "https://cbenzchat.vercel.app/"
     }
