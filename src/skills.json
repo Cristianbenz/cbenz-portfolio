@@ -33,10 +33,6 @@
       "name": "PostgreSQL"
     },
     {
-      "icon": "./assets/images/skills/sqlserver-logo.png",
-      "name": "SQL server"
-    },
-    {
       "icon": "./assets/images/skills/mongodb-logo.png",
       "name": "MongoDB"
     }
