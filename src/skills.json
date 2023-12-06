@@ -1,8 +1,8 @@
 {
   "programmingLanguages": [
     {
-      "icon": "./assets/images/skills/csharp-logo.png",
-      "name": "C#"
+      "icon": "./assets/images/skills/java-logo.png",
+      "name": "Java"
     },
     {
       "icon": "./assets/images/skills/ts-logo.png",
@@ -11,12 +11,20 @@
   ],
   "frameworks": [
     {
-      "icon": "./assets/images/skills/net-logo.png",
-      "name": ".NET"
+      "icon": "./assets/images/skills/spring-boot-logo.png",
+      "name": "Spring Boot"
     },
     {
       "icon": "./assets/images/skills/angular-logo.png",
       "name": "Angular Js"
+    },
+    {
+      "icon": "./assets/images/skills/nest-logo.png",
+      "name": "Nest Js"
+    },
+    {
+      "icon": "./assets/images/skills/express-logo.png",
+      "name": "Express Js"
     }
   ],
   "database": [
@@ -31,10 +39,6 @@
     {
       "icon": "./assets/images/skills/mongodb-logo.png",
       "name": "MongoDB"
-    },
-    {
-      "icon": "./assets/images/skills/EF-logo.png",
-      "name": "Entity Framework"
     }
   ],
   "tools": [
