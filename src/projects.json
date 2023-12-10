@@ -25,7 +25,7 @@
         "images": ["./assets/images/chat/chat-video.mp4"],
         "description": "Chat application, once an account is created, the user can search for other existing users by name and identifier, and exchange messages with them. The relevance of the project is the use of SignalR to create real-time functionalities such as receiving messages and requests.",
         "backTechnologies": ["Java,", "Spring boot,", "JWT,", "WebSockets"],
-        "frontTechnologies": ["Angular,", "Angular Material,", "SignalR"],
+        "frontTechnologies": ["Angular,", "Angular Material,", "SocketJs"],
         "dbTechnologies": ["PostgreSQL,", "JPA,"],
         "repository": "https://github.com/Cristianbenz/chatClient",
         "deploy": "https://cbenzchat.vercel.app/"
